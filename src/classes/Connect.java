@@ -18,7 +18,7 @@ public class Connect {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:D:FlightSystem.db";
+            String url = "jdbc:sqlite:FlightSystem.sqlite";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
 

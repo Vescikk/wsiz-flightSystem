@@ -33,8 +33,11 @@ public class Passenger{
         lastName = "undefined";
         resCode = "undefined";
     }
+
     public Passenger(String firstName,String lastName, String resCode){
+
         setValues(firstName,lastName,resCode);
+
         System.out.println(firstName + " " + lastName + " " + resCode);
     }
 

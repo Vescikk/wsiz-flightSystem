@@ -4,16 +4,16 @@ public class Flight  {
 
     private float ticketPrice;
 
-    public int getTotalSeats() {
+    public String getTotalSeats() {
         return totalSeats;
     }
 
-    public void setTotalSeats(int totalSeats) {
+    public void setTotalSeats(String totalSeats) {
         this.totalSeats = totalSeats;
     }
 
     // private String passengerList; ??
-    private int totalSeats;
+    private String totalSeats;
 
     public int getFreeSeats() {
         return freeSeats;
@@ -27,8 +27,35 @@ public class Flight  {
     private String flightId;
 
     private String from_location;
+
+    public String getTo_location() {
+        return to_location;
+    }
+
+    public void setTo_location(String to_location) {
+        this.to_location = to_location;
+    }
+
     private String to_location;
+
+    public String getFlightDepartureDate() {
+        return flightDepartureDate;
+    }
+
+    public void setFlightDepartureDate(String flightDepartureDate) {
+        this.flightDepartureDate = flightDepartureDate;
+    }
+
     private String flightDepartureDate;
+
+    public String getFlightArrivalDate() {
+        return flightArrivalDate;
+    }
+
+    public void setFlightArrivalDate(String flightArrivalDate) {
+        this.flightArrivalDate = flightArrivalDate;
+    }
+
     private String flightArrivalDate;
     public  String[] passengersList;
 
@@ -41,7 +68,7 @@ public class Flight  {
 
     public Flight(){
         ticketPrice = 0;
-        totalSeats = 0;
+        totalSeats = "undefined";
         flightId = "undefined";
         from_location = "undefined";
         to_location = "undefined";
@@ -49,13 +76,13 @@ public class Flight  {
         flightArrivalDate = "Undefined";
     }
 
-    public Flight(float ticketPrice, int totalSeats, String flightId, String from_location,
+    public Flight(float ticketPrice, String totalSeats, String flightId, String from_location,
                   String to_location, String flightDepartureDate, String flightArrivalDate) {
 
         setValues(ticketPrice, totalSeats, flightId,from_location,to_location,flightDepartureDate,flightArrivalDate);
     }
 
-    public void setValues(float ticketPrice, int totalSeats, String flightId, String from_location,
+    public void setValues(float ticketPrice, String totalSeats, String flightId, String from_location,
                           String to_location, String flightDepartureDate, String flightArrivalDate) {
         this.ticketPrice = ticketPrice;
         this.totalSeats = totalSeats;

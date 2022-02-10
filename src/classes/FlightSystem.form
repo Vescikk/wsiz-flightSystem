@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="classes.FlightSystem">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="4" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="763" height="400"/>
@@ -30,8 +30,11 @@
           <editable value="true"/>
           <foreground color="-1"/>
           <model>
+            <item value="-"/>
+            <item value="Paris"/>
             <item value="Berlin"/>
             <item value="Spain"/>
+            <item value="London"/>
           </model>
         </properties>
       </component>
@@ -44,30 +47,164 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="54aa" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="54aa" layout-manager="GridLayoutManager" row-count="3" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Loty"/>
             </constraints>
             <properties>
+              <background color="-9013642"/>
+              <foreground color="-4504030"/>
+            </properties>
+            <border type="line">
+              <color color="-16777216"/>
+            </border>
+            <children>
+              <vspacer id="29339">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="5" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="e74be" class="javax.swing.JLabel" binding="from_label">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="71" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12013057"/>
+                  <foreground color="-16777216"/>
+                  <text value="Odlot"/>
+                  <verticalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="eccdf" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12013057"/>
+                  <foreground color="-16777216"/>
+                  <text value="Przylot"/>
+                </properties>
+              </component>
+              <component id="8faad" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Data"/>
+                </properties>
+              </component>
+              <component id="531d4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Cena biletów"/>
+                </properties>
+              </component>
+              <component id="44362" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-16777216"/>
+                  <text value="Dostępne miejsca"/>
+                </properties>
+              </component>
+              <component id="f282e" class="javax.swing.JButton" binding="rezerwujButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="9" use-parent-layout="false">
+                    <minimum-size width="100" height="-1"/>
+                    <preferred-size width="80" height="10"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Rezerwuj"/>
+                </properties>
+              </component>
+              <component id="57a8c" class="javax.swing.JLabel" binding="label">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="2" use-parent-layout="false">
+                    <preferred-size width="71" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Wenecja"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <component id="2139f" class="javax.swing.JLabel" binding="to_value">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Hiszpania"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <component id="39ba8" class="javax.swing.JLabel" binding="date_value">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Label"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <component id="71614" class="javax.swing.JLabel" binding="seats_value">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="230"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <component id="f3b81" class="javax.swing.JLabel" binding="price_value">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="123zł"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d6456" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Rezerwacje"/>
+            </constraints>
+            <properties>
               <background color="-13523269"/>
               <foreground color="-4504030"/>
+              <toolTipText value=""/>
             </properties>
             <border type="none"/>
             <children>
-              <vspacer id="37996">
+              <component id="cb03e" class="javax.swing.JLabel" binding="resLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Rezerwacja"/>
+                </properties>
+              </component>
+              <hspacer id="c1956">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="40547">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <component id="57a8c" class="javax.swing.JLabel" binding="label">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <text value="Test"/>
-                </properties>
-              </component>
             </children>
           </grid>
         </children>
@@ -78,7 +215,11 @@
         </constraints>
         <properties>
           <model>
+            <item value="-"/>
+            <item value="Poland"/>
+            <item value="Russia"/>
             <item value="Netherlands"/>
+            <item value="Czech"/>
           </model>
         </properties>
       </component>
@@ -88,7 +229,11 @@
         </constraints>
         <properties>
           <model>
-            <item value="22-01-2022"/>
+            <item value="-"/>
+            <item value="16-02-22"/>
+            <item value="12-04-22"/>
+            <item value="29-06-22"/>
+            <item value="04-07-22"/>
           </model>
         </properties>
       </component>
